@@ -1,17 +1,346 @@
+.hero-header {
+position: relative;
+width: 100%;
+height: 900px;
+background-image: url("Image/mainphoto.jpeg");  
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat
+}
+
+.hero-header .hero-text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+text-align: center;
+font-size: 90px;
+font-weight: 700;
+text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+font-family: "Inconsolata", sans-serif;
+}
+
+
+/* image to show */
+img{
+max-width: 100%;
+height: auto;
+}
+
 /* background color */
-body {
- background-color: lightblue;
- font-family: 'Montserrat';font-size: 22px;
+body, html {
+height: 100%;
+font-family: "Inconsolata", sans-serif;
 }
- 
-/* Heading */
-h1 {
- color: white;
- text-align: center;
+
+/* green header */
+.custom-header {
+background-color: #1c3b28;
 }
- 
-/* Make the image responsive */
-img {
- max-width: 100%;  /* Image will never exceed the width of its container */
- height: auto;     /* Maintain the aspect ratio */
+
+.custom-header .w3-button {
+background-color: #1c3b28;
+color: white;
+padding: 14px 20px;
+font-size: 25px;
 }
+
+.custom-header .w3-button:hover {
+background-color: #145214;
+}
+
+/* Contact */
+.contact_us_green * {
+font-family: Nunito, sans-serif;
+}
+
+.contact_us_green .responsive-container-block {
+min-height: 75px;
+height: fit-content;
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+margin-top: 0px;
+margin-right: auto;
+margin-bottom: 60px;
+margin-left: auto;
+}
+
+.contact_us_green input:focus,
+.contact_us_green textarea:focus {
+outline: none;
+}
+
+.contact_us_green .text-blk {
+margin: 0;
+line-height: 25px;
+}
+
+.contact_us_green .responsive-cell-block {
+min-height: 75px;
+}
+
+.contact_us_green .responsive-container-block.container {
+max-width: 1320px;
+margin: 60px auto;
+}
+
+.contact_us_green .responsive-container-block.big-container {
+    padding: 0 100px;
+}
+
+.contact_us_green .text-blk.contactus-head {
+font-size: 40px;
+line-height: 50px;
+font-weight: 700;
+margin-top: 50px;
+margin-bottom: 30px;
+color:#1c3b28;
+text-align: center;
+}
+
+
+.contact_us_green .text-blk.contactus-subhead {
+max-width: 385px;
+color: #939393;
+font-size: 18px;
+margin-bottom: 50px;
+}
+
+.contact_us_green .contact-svg {
+padding-right: 25px;
+width: 65px;
+height: 40px;
+}
+
+.contact_us_green .text-box {
+display: flex;
+margin-bottom: 50px;
+}
+
+.contact_us_green .contact-text {
+color: #939393;
+}
+
+.contact_us_green .input {
+height: 50px;
+width: 90%;
+border: 2.5px solid #a2a2a2;
+border-radius: 5px;
+font-size: 16px;
+padding: 5px 15px;
+}
+
+.contact_us_green .textinput {
+width: 1000%;
+max-width: 5000px;
+height: 300px;
+border: 2px solid #a2a2a2;
+border-radius: 5px;
+font-size: 16px;
+padding: 20px;
+resize: none;
+box-sizing: border-box;
+}
+
+.contact_us_green .submit-btn {
+min-width: 290px;
+height: 60px;
+background-color: #1c3b28;
+font-size: 18px;
+font-weight: 700;
+color: white;
+border: none;
+border-radius: 5px;
+margin: 0 auto;
+cursor: pointer;
+}
+
+.contact_us_green .btn-wrapper {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+
+.contact_us_green .text-blk.input-title {
+font-size: 18px;
+font-weight: 600;
+line-height: 28px;
+margin-bottom: 15px;
+color:#1c3b28
+}
+
+.contact_us_green .responsive-cell-block.wk-ipadp-6.wk-tab-12.wk-mobile-12.wk-desk-6 {
+margin-bottom: 30px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.contact_us_green .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-5.wk-ipadp-10 {
+padding-left: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.contact_us_green .head-text-box {
+display: none;
+}
+
+/* middle line for contact page */
+.contact_us_green .line {
+width: 2px;
+background-color: #a2a2a2;
+margin: 0 20px 0 500px;
+height: auto;
+}
+
+@media (max-width: 1024px) {
+.contact_us_green .responsive-container-block.container {
+justify-content: center;
+}
+.contact_us_green .text-blk.contactus-subhead {
+max-width: 90%;
+}
+.contact_us_green .head-text-box {
+display: block;
+}
+.contact_us_green .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-7.wk-ipadp-10.line {
+padding-bottom: 60px;
+}
+.contact_us_green .line {
+width: 100%;
+height: 2px;
+margin: 30px 0;
+}
+.contact_us_green .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-5.wk-ipadp-10 {
+margin-top: 80px;
+padding-left: 0;
+}
+}
+
+@media (max-width: 768px) {
+.contact_us_green .text-content {
+display: none;
+}
+.contact_us_green .input,
+.contact_us_green .textinput {
+width: 100%;
+}
+.contact_us_green .text-blk.contactus-head {
+font-size: 30px;
+}
+}
+
+@media (max-width: 500px) {
+.contact_us_green .responsive-container-block.big-container {
+padding: 0 20px;
+}
+.contact_us_green .text-blk.input-title {
+font-size: 16px;
+}
+.contact_us_green .text-blk.contactus-head {
+font-size: 26px;
+}
+.contact_us_green .text-blk.contactus-subhead {
+font-size: 16px;
+line-height: 23px;
+}
+.contact_us_green .input {
+height: 45px;
+}
+.contact_us_green .responsive-cell-block.wk-ipadp-6.wk-tab-12.wk-mobile-12.wk-desk-6 {
+margin: 0;
+}
+}
+
+/* Right side contact */
+.contact_us_green .workik-contact-bigbox {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.contact_us_green .contact-svg {
+width: 40px;
+height: 40px;
+padding-right: 5px;
+}
+
+.contact_us_green .text-box {
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.contact_us_green .textinput {
+width: 250%;
+}
+
+.contact_us_green .input-title:nth-of-type(2) {
+margin-top: 20px;
+display: block;
+}
+
+.video-container {
+position: relative;
+padding-bottom: 40%;
+height: 0;
+overflow: hidden;
+max-width: 1000px;
+margin: auto;
+}
+
+.video-container iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+.video-title {
+text-align: left;
+margin-left: 20px;
+font-weight: 700;
+font-size: 50px;
+font-family: "Inconsolata", sans-serif;
+padding: 64px 0;
+color:#1c3b28
+}
+
+.scroll-container {
+overflow-x: scroll;
+white-space: nowrap;
+padding: 50px;
+margin-bottom: 100px;
+}
+
+.scroll-container::-webkit-scrollbar {
+display: none;
+}
+
+.scroll-container img {
+display: inline-block;
+height: 300px;
+width: auto;
+margin-right: 15px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-title {
+font-size: 36px;
+font-weight: 700;
+font-family: "Inconsolata", sans-serif;
+text-align: center;
+margin-top: 70px;
+margin-bottom: 0;
+color:#1c3b28;
+
+}
+
