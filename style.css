@@ -52,7 +52,7 @@ background-color: #145214;
 
 /* Contact */
 .contact_us_green * {
-font-family: Nunito, sans-serif;
+font-family: Inconsolata, sans-serif;
 }
 
 .contact_us_green .responsive-container-block {
@@ -99,6 +99,7 @@ margin-top: 50px;
 margin-bottom: 30px;
 color:#1c3b28;
 text-align: center;
+font-family: "Inconsolata", sans-serif;
 }
 
 
@@ -107,6 +108,7 @@ max-width: 385px;
 color: #939393;
 font-size: 18px;
 margin-bottom: 50px;
+font-family: "Inconsolata", sans-serif;
 }
 
 .contact_us_green .contact-svg {
@@ -343,4 +345,6 @@ margin-bottom: 0;
 color:#1c3b28;
 
 }
+
+
 
