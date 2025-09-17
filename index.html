@@ -1,35 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <!-- This is my comment -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Workshop</title>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 
-    <!-- Link to CSS file -->
-    <link rel="stylesheet" href="style.css">
+<!-- Link to CSS file -->
+<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-   <h1>Heading 1</h1>
-   <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <br>
-    <h6>Heading 6</h6>
 
-    <p>This is a paragraph of text to demonstrate HTML structure.</p>
+<!-- topics -->
+<div class="w3-top">
+  <div class="w3-row w3-padding custom-header">
+    <div class="w3-col s3">
+      <a href="#home" class="w3-button w3-block w3-block">Home</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#Video" class="w3-button w3-block w3-block">Video</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#Gallery" class="w3-button w3-block w3-block">Behind the Scenes</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#Contact" class="w3-button w3-block w3-block">Contact</a>
+    </div>
+  </div>
+</div>
 
-    <!-- Insert Image -->
-        <img src="Image/cat1.jpeg" alt="cat1">
+<!-- home page -->
+<header id="home" class="hero-header">
+  <div class="hero-text">Dawn to Dusk at NYUAD</div>
+</header>
 
-    <!-- Insert Audio -->
-        <audio controls>
-        <source src="audio/audio1.wav" type="audio/mpeg">
-        </audio>
+<div class="w3-sand w3-large">
 
-    <!-- Insert Video -->
-<iframe src="https://drive.google.com/file/d/1FNiqnka5RYNx4JlS_VdELPr2159PSO3G/preview" width="640" height="480" allow="autoplay"></iframe>
+<!-- Video  -->
+<div class="w3-container" id="Video">
+    <h5 class="video-title">
+      The Video
+    </h5>
+    <div class="w3-content video-container">
+      <iframe src="https://drive.google.com/file/d/1FW8WIjjlWYL-f7AvZTNDgdiLrhVtu2tl/preview" allow="autoplay" allowfullscreen></iframe>
+   </div>
+</div>
+
+<!-- photos  -->
+<div id="Gallery">
+  <h3 class="gallery-title">Behind the Scenes</h3>
+</div>
+<div class="scroll-container">
+  <img src="Image/outsidephoto1.jpg" alt="outside">
+  <img src="Image/elevator.jpg" alt="elevator">
+  <img src="Image/outsidephoto2.jpg" alt="outside2">
+  <img src="Image/Studyroom.jpg" alt="studyroom">
+  <img src="Image/Outsidephoto3.jpg" alt="outside3">
+  <img src="Image/Dormphoto.jpg" alt="dorm">
+</div>
+
+<!-- Contact  -->
+<div id="Contact" class="contact_us_green">
+  <h5 class="text-blk contactus-head">Contact Me</h5>
+  <div class="responsive-container-block big-container">
+    <!-- left side-->
+    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-6 wk-ipadp-6 left-form">
+      <form class="form-box">
+        <p class="text-blk input-title">EMAIL</p>
+        <input class="input" type="email" placeholder="Your email..." required>
+        
+        <p class="text-blk input-title">YOUR MESSAGE</p>
+        <textarea class="textinput" placeholder="Your message..." required></textarea>
+        
+        <div class="btn-wrapper">
+          <button class="submit-btn" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="line"></div>
+
+    <!-- right side -->
+    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-6 wk-ipadp-6 right-info">
+      <div class="text-box">
+        <img class="contact-svg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET22.jpg" alt="Email Icon">
+        <p class="contact-text">sma9389@nyu.edu</p>
+      </div>
+      <div class="text-box">
+        <img class="contact-svg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET21.jpg" alt="Phone Icon">
+        <p class="contact-text">+971 58 847 7535</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<!-- link to javascript file -->
+<script src="script.js"></script>
 
 </body>
 </html>
